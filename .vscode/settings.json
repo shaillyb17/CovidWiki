@@ -1,0 +1,8 @@
+{
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint-flask"
+    ],
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "C:\\Users\\Admin\\.virtualenvs\\FeedBackApp-3tH2kyVu\\Scripts\\python.exe"
+}

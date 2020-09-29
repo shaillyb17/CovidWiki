@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- PageTop -->
+    <div class="top row">
+      <div class="col-lg-6 col-md-6 topText">
+        <h1 class="bigText">COVID-19<br>Vaccine<br>Progress</h1>
+        <h5 class="smallText">Track the progress of the Coronavirus<br>vaccine in countries leading in the reasearch.</h5>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 topImage">
+        <img src="static/images/e.jpg" alt="cover-image">
+      </div>
+    </div>
+    <!-- PageIntro -->
+    <div class="intro">
+      <div class="introText">
+        <p>A COVID‑19 vaccine is a biotechnology product intended to provide acquired immunity against coronavirus disease 2019 (COVID‑19). As of September 2020, there were 321 vaccine candidates in development, a 2.5 fold increase since April. However, no candidate has completed clinical trials to prove its safety and efficacy.[1] In mid-September, some 42 vaccine candidates were in clinical research: namely 33 in Phase I–II trials and 9 in Phase II–III trials.</p>        
+        <p>The World Health Organization (WHO), the Coalition for Epidemic Preparedness Innovations (CEPI), and the Gates Foundation (GF) are committing money and organizational resources for the prospect that several vaccines will be needed to prevent continuing COVID‑19 infection.[6] The CEPI, which is organizing a US$2 billion worldwide fund for rapid investment and development of vaccine candidates,[7] indicated in September that clinical data to support licensure may be available by the end of 2020.[1] On 4 May 2020, the WHO organized a telethon which received US$8.1 billion in pledges from forty countries to support rapid development of vaccines to prevent COVID‑19 infections.[8] At the same time, the WHO also announced the deployment of an international "Solidarity trial" for simultaneous evaluation of several vaccine candidates reaching Phase II–III clinical trials.</p>        
+        <p>A vaccine for an infectious disease has never before been produced in less than several years, and no vaccine exists for preventing a coronavirus infection in humans.[6] After the coronavirus was detected in December 2019,[22] the genetic sequence of COVID‑19 was published on 11 January 2020, triggering an urgent international response to prepare for the outbreak and hasten development of a preventative vaccine.</p>        
+      </div>
+    </div>
+    <!-- CountryCards -->
+    <div class="countryCards row">
+    {% for article in articles %}
+    <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px; height: auto;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="static/images/{{ article.image }}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <a href="{{ article.link.partition('.')[0] }}"><h5 class="card-title">{{ article.country }}</h5></a>
+            <p class="card-text">{{ article.introLine }}</p>
+            <p class="card-text"><small class="text-muted">Edited by {{ article.author.username }} on {{ article.date_edited.strftime('%d-%m-%Y') }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>      
+    {% endfor %}    
+{% endblock content%}

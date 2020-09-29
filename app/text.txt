@@ -1,0 +1,236 @@
+<li class="nav-item">
+          <a class="nav-link"  href="{{ url_for('uk') }}">United Kingdom</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{ url_for('uae') }}">United Arab Emirates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{ url_for('russia') }}">Russia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{ url_for('germany') }}">Germany</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="{{ url_for('china') }}">China</a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="countryCards row">
+      <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 col-lg-6 col-md-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> -->
+    <!-- Footer -->
+
+
+
+
+
+
+
+    body{
+  text-align: justify;
+  background-color: #f6f6f6;
+  margin: 2px 3px;
+  font-family: 'PT Serif', serif;
+}
+.top{
+  padding: 30px 20px;
+}
+.bigText{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;  
+  font-size: 3.5rem;
+}
+.smallText{
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  color: #333333;
+}
+.topText{
+  padding-left: 3%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-content: left;
+  display: block;
+  align-items: center;
+}
+.topImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countryCards{
+  margin-left: auto;
+  margin-right: auto;
+}
+.card{
+  padding: 0 0;
+}
+
+
+
+    
+
+article = Article(country=form.country.data, UpdatedContent=form.UpdatedContent.data, author=current_user)
+         db.session.add(article)
+
+
+
+
+
+
+
+
+articles = [
+    {
+        'country': 'United Kingdom',
+        'image': 'uk.png',
+        'introLine': 'i saw a baby panda once it was very cute i bought him a bamboo and he was very happy thank you!',
+        'editedBy': 'anonymous',
+        'dateEdited': 'September 23, 2020',
+        'link': 'uk.html',
+        'UpdatedContent': 'A chimpanzee adenovirus vaccine vector (ChAdOx1), developed at Oxford’s Jenner Institute, was chosen as the most suitable vaccine technology for a SARS-CoV-2 vaccine as it can generate a strong immune response from one dose and it is not a replicating virus, so it cannot cause an ongoing infection in the vaccinated individual. This also makes it safer to give to children, the elderly and anyone with a pre-existing condition such as diabetes. Chimpanzee adenoviral vectors are a very well-studied vaccine type, having been used safely in thousands of subjects, from 1 week to 90 years of age, in vaccines targeting over 10 different diseases. Coronaviruses have club-shaped spikes on their outer coats. Immune responses from other coronavirus studies suggest that these are a good target for a vaccine. The Oxford vaccine contains the genetic sequence of this surface spike protein inside the ChAdOx1 construct. After vaccination, the surface spike protein of the coronavirus is produced, which primes the immune system to attack the coronavirus if it later infects the body. Prof. Gilbert and team have previously developed a vaccine for another human coronavirus disease, which is Middle East Respiratory Syndrome (MERS), and this has shown promise in early clinical trials. At the same time as preparing for and conducting the first clinical trial, production of the vaccine is being scaled up ready for larger trials, and potentially, future deployment. Researchers at Oxford University are working with great care, and due haste, in developing a new vaccine for coronavirus. If proven effective, a safe coronavirus vaccine could provide an exit strategy for the pandemic and save lives.'
+    },
+    {
+        'country': 'United Arab Emirates',
+        'image': 'uae.jpg',
+        'introLine': 'i saw a baby panda once it was very cute i bought him a bamboo and he was very happy thank you!',
+        'editedBy': 'anonymous',
+        'dateEdited': 'September 23, 2020',
+        'link': 'uae.html',
+        'UpdatedContent': 'A chimpanzee adenovirus vaccine vector (ChAdOx1), developed at Oxford’s Jenner Institute, was chosen as the most suitable vaccine technology for a SARS-CoV-2 vaccine as it can generate a strong immune response from one dose and it is not a replicating virus, so it cannot cause an ongoing infection in the vaccinated individual. This also makes it safer to give to children, the elderly and anyone with a pre-existing condition such as diabetes. Chimpanzee adenoviral vectors are a very well-studied vaccine type, having been used safely in thousands of subjects, from 1 week to 90 years of age, in vaccines targeting over 10 different diseases. Coronaviruses have club-shaped spikes on their outer coats. Immune responses from other coronavirus studies suggest that these are a good target for a vaccine. The Oxford vaccine contains the genetic sequence of this surface spike protein inside the ChAdOx1 construct. After vaccination, the surface spike protein of the coronavirus is produced, which primes the immune system to attack the coronavirus if it later infects the body. Prof. Gilbert and team have previously developed a vaccine for another human coronavirus disease, which is Middle East Respiratory Syndrome (MERS), and this has shown promise in early clinical trials. At the same time as preparing for and conducting the first clinical trial, production of the vaccine is being scaled up ready for larger trials, and potentially, future deployment. Researchers at Oxford University are working with great care, and due haste, in developing a new vaccine for coronavirus. If proven effective, a safe coronavirus vaccine could provide an exit strategy for the pandemic and save lives.'
+    },
+    {
+        'country': 'Russia',
+        'image': 'russia.png',
+        'editedBy': 'anonymous',
+        'introLine': 'i saw a baby panda once it was very cute i bought him a bamboo and he was very happy thank you!',
+        'dateEdited': 'September 23, 2020',
+        'link': 'russia.html',
+        'UpdatedContent': 'A chimpanzee adenovirus vaccine vector (ChAdOx1), developed at Oxford’s Jenner Institute, was chosen as the most suitable vaccine technology for a SARS-CoV-2 vaccine as it can generate a strong immune response from one dose and it is not a replicating virus, so it cannot cause an ongoing infection in the vaccinated individual. This also makes it safer to give to children, the elderly and anyone with a pre-existing condition such as diabetes. Chimpanzee adenoviral vectors are a very well-studied vaccine type, having been used safely in thousands of subjects, from 1 week to 90 years of age, in vaccines targeting over 10 different diseases. Coronaviruses have club-shaped spikes on their outer coats. Immune responses from other coronavirus studies suggest that these are a good target for a vaccine. The Oxford vaccine contains the genetic sequence of this surface spike protein inside the ChAdOx1 construct. After vaccination, the surface spike protein of the coronavirus is produced, which primes the immune system to attack the coronavirus if it later infects the body. Prof. Gilbert and team have previously developed a vaccine for another human coronavirus disease, which is Middle East Respiratory Syndrome (MERS), and this has shown promise in early clinical trials. At the same time as preparing for and conducting the first clinical trial, production of the vaccine is being scaled up ready for larger trials, and potentially, future deployment. Researchers at Oxford University are working with great care, and due haste, in developing a new vaccine for coronavirus. If proven effective, a safe coronavirus vaccine could provide an exit strategy for the pandemic and save lives.'
+    },
+    {
+        'country': 'Germany',
+        'image': 'germany.png',
+        'introLine': 'i saw a baby panda once it was very cute i bought him a bamboo and he was very happy thank you!',
+        'editedBy': 'anonymous',
+        'dateEdited': 'September 23, 2020',
+        'link': 'germany.html',
+        'UpdatedContent': 'A chimpanzee adenovirus vaccine vector (ChAdOx1), developed at Oxford’s Jenner Institute, was chosen as the most suitable vaccine technology for a SARS-CoV-2 vaccine as it can generate a strong immune response from one dose and it is not a replicating virus, so it cannot cause an ongoing infection in the vaccinated individual. This also makes it safer to give to children, the elderly and anyone with a pre-existing condition such as diabetes. Chimpanzee adenoviral vectors are a very well-studied vaccine type, having been used safely in thousands of subjects, from 1 week to 90 years of age, in vaccines targeting over 10 different diseases. Coronaviruses have club-shaped spikes on their outer coats. Immune responses from other coronavirus studies suggest that these are a good target for a vaccine. The Oxford vaccine contains the genetic sequence of this surface spike protein inside the ChAdOx1 construct. After vaccination, the surface spike protein of the coronavirus is produced, which primes the immune system to attack the coronavirus if it later infects the body. Prof. Gilbert and team have previously developed a vaccine for another human coronavirus disease, which is Middle East Respiratory Syndrome (MERS), and this has shown promise in early clinical trials. At the same time as preparing for and conducting the first clinical trial, production of the vaccine is being scaled up ready for larger trials, and potentially, future deployment. Researchers at Oxford University are working with great care, and due haste, in developing a new vaccine for coronavirus. If proven effective, a safe coronavirus vaccine could provide an exit strategy for the pandemic and save lives.'
+    },
+    {
+        'country': 'China',
+        'image': 'china.png',
+        'introLine': 'i saw a baby panda once it was very cute i bought him a bamboo and he was very happy thank you!',
+        'editedBy': 'anonymous',
+        'dateEdited': 'September 23, 2020',
+        'link': 'china.html',
+        'UpdatedContent': 'A chimpanzee adenovirus vaccine vector (ChAdOx1), developed at Oxford’s Jenner Institute, was chosen as the most suitable vaccine technology for a SARS-CoV-2 vaccine as it can generate a strong immune response from one dose and it is not a replicating virus, so it cannot cause an ongoing infection in the vaccinated individual. This also makes it safer to give to children, the elderly and anyone with a pre-existing condition such as diabetes. Chimpanzee adenoviral vectors are a very well-studied vaccine type, having been used safely in thousands of subjects, from 1 week to 90 years of age, in vaccines targeting over 10 different diseases. Coronaviruses have club-shaped spikes on their outer coats. Immune responses from other coronavirus studies suggest that these are a good target for a vaccine. The Oxford vaccine contains the genetic sequence of this surface spike protein inside the ChAdOx1 construct. After vaccination, the surface spike protein of the coronavirus is produced, which primes the immune system to attack the coronavirus if it later infects the body. Prof. Gilbert and team have previously developed a vaccine for another human coronavirus disease, which is Middle East Respiratory Syndrome (MERS), and this has shown promise in early clinical trials. At the same time as preparing for and conducting the first clinical trial, production of the vaccine is being scaled up ready for larger trials, and potentially, future deployment. Researchers at Oxford University are working with great care, and due haste, in developing a new vaccine for coronavirus. If proven effective, a safe coronavirus vaccine could provide an exit strategy for the pandemic and save lives.'
+    }
+]
+
+
+
+# if form.country.data=='1':
+    #     article_id = 1
+    # elif form.country.data=='2':
+    #     article_id = 2
+    # elif form.country.data =='3':
+    #     article_id = 3
+    # elif form.country.data=='4':
+    #     article_id = 4
+    # elif form.country.data=='5':
+    #     article_id = 5
+    # if(form.country.data=='United Kingdom'):
+    #     article_id = 1
+    # elif(form.country.data=='United Arab Emirates'):
+    #     article_id = 2
+    # elif(form.country.data =='Russia'):
+    #     article_id = 3
+    # elif(form.country.data=='Germany'):
+    #     article_id = 4
+    # elif(form.country.data=='China'):
+    #     article_id = 5
+    
+    #article_selected = Article.query.get_or_404(article_id)
+    
+    # for i in articles:
+    #     if getattr(i,'country') == 'form.country':
+    #         article_selected = i
+    #         break
+    #article = Article.query.get(article_selected)

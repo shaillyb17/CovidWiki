@@ -1,0 +1,163 @@
+body{
+    text-align: justify;
+    background-color: #f6f6f6;
+    margin: 2px 3px;
+    font-family: 'PT Serif', serif;
+  }
+  .top{
+    padding: 30px 20px;
+  }
+  .nav-link{
+    display: inline !important;
+  }
+  .bigText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;  
+    font-size: 3.5rem;
+  }
+  .smallText{
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    color: #333333;
+  }
+  .topText{
+    padding-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-content: left;
+    display: block;
+    align-items: center;
+  }
+  .topImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .countryCards{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card{
+    padding: 0 0;
+  }
+  a{
+    color: black;
+  }
+  a:visited{
+    color: black;
+  }
+
+
+   /* Country Page Styling */
+
+   .countryHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  
+  .countryHead div {
+    max-width: 300px;
+  }
+  
+  /* .countryHead h1 {
+    margin-bottom: 20px;
+  }
+   */
+  #uk{
+    background: url('images/uksmolb.png') no-repeat
+      center / cover;  
+  }
+  #uae{
+    background: url('images/uaesmolb.png') no-repeat
+      center / cover;  
+  }
+  #russia{
+    background: url('images/russiasmolb.png') no-repeat
+      center / cover;  
+  }
+  #germany{
+    background: url('images/germanysmolb.png') no-repeat
+      center / cover;  
+  }
+  #china{
+    background: url('images/chinasmolb.png') no-repeat
+      center / cover;  
+  }
+  @media (min-width:767px) {
+    #uk{
+      background: url('images/ukbigb.png') no-repeat
+      center / cover;
+    }
+    #uae{
+      background: url('images/uaebigb.png') no-repeat
+        center / cover;  
+    }
+    #russia{
+      background: url('images/russiabigb.png') no-repeat
+        center / cover;  
+    }
+    #germany{
+      background: url('images/germanybigb.png') no-repeat
+        center / cover;  
+    }
+    #china{
+      background: url('images/chinabigb.png') no-repeat
+        center / cover;  
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    #uk{
+      background: url('images/ukvsmolb.png') no-repeat
+      center / cover;
+    }
+    #uae{
+      background: url('images/uaevsmolb.png') no-repeat
+        center / cover;  
+    }
+    #russia{
+      background: url('images/russiavsmolb.png') no-repeat
+        center / cover;  
+    }
+    #germany{
+      background: url('images/germanyvsmolb.png') no-repeat
+        center / cover;  
+    }
+    #china{
+      background: url('images/chinavsmolb.png') no-repeat
+        center / cover;  
+    }
+  }
+  
+
+
+  .country-text{
+    font-size: larger;
+  }
+
+  /* Account */
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+
+ 
+  
+  /* footer styling */
+#footer{
+  color: black;
+  text-align: center;
+  padding: 5% 3%;
+}

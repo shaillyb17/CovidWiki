@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}    
+
+    <div class="countryHead", id={{ country }}>
+        <h1></h1>
+    </div>
+
+    <div class="country-data">
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="country-text">{{ articles.UpdatedContent}}</p>
+        <p class="bottom-info"><small class="text-muted">Edited by {{ articles.author.username }}
+            on {{ articles.date_edited.strftime('%d-%m-%Y') }}</small></p>
+    </div>
+
+{% endblock content%}
+
+
+

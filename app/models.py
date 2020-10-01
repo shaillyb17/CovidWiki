@@ -42,4 +42,4 @@ class Article(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
     def __repr__(self):
-        return f"Article('{self.country}','{self.date_edited},'{self.link})"
+        return f"Article('{self.id} {self.country}','{self.date_edited},'{self.link})"

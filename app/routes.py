@@ -27,30 +27,13 @@ def change():
         return redirect(url_for('home'))
     return render_template('change.html', title='Edit Info', form=form)
 
-@app.route('/uk')
-def uk():
-    articles = Article.query.all()
-    return render_template('uk.html',articles=articles)
 
-@app.route('/uae')
-def uae():
-    articles = Article.query.all()
-    return render_template('uae.html',articles=articles)
 
-@app.route('/russia')
-def russia():
+@app.route('/<cntry>')
+def countryart(cntry):
     articles = Article.query.all()
-    return render_template('russia.html',articles=articles)
+    return render_template('commonCountryLayout.html', articles=articles, country=cntry)
 
-@app.route('/germany')
-def germany():
-    articles = Article.query.all()
-    return render_template('germany.html',articles=articles)
-
-@app.route('/china')
-def china():
-    articles = Article.query.all()
-    return render_template('china.html',articles=articles)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():

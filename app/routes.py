@@ -8,11 +8,11 @@ from app.models import User, Article
 from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message
 contr_tab = {
-    'uk': 1,
-    'uae': 2,
-    'russia': 3,
-    'germany': 4,
-    'china': 5
+    'uk': 0,
+    'uae': 1,
+    'russia': 2,
+    'germany': 3,
+    'china': 4
 }
 
 @app.route('/')
